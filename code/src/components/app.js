@@ -6,7 +6,7 @@ state={
 }
 
   componentWillMount(){
-    fetch('http://api.sr.se/api/v2/channels?format=json&size=100')
+    fetch('https://api.sr.se/api/v2/channels?format=json&size=100')
     .then(data => data.json())
     .then((data) => {
       console.log(data)
